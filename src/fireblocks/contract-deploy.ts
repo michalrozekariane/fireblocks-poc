@@ -13,7 +13,7 @@ export const deployERC3643Contract = async () => {
 
   const tokenOwnerAddress = '0x000000000000000000000000000000000061a98d'
   const assetID = 'HBAR_TEST'
-  const vaultAccountId = '6400397'
+  const vaultAccountId = '2'
 
   // const customConfigProps = {
   //   _isMintable: true,
