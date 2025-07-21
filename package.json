@@ -1,0 +1,31 @@
+{
+  "name": "fireblocks-poc",
+  "version": "1.0.0",
+  "description": "ERC‑3643 Hedera Fireblocks POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalrozekariane/fireblocks-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalrozekariane/fireblocks-poc/issues"
+  },
+  "homepage": "https://github.com/michalrozekariane/fireblocks-poc#readme",
+  "packageManager": "pnpm@9.10.0+sha1.216899f511c8dfde183c7cb50b69009c779534a8",
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fireblocks/ts-sdk": "^11.0.0",
+    "dotenv": "^17.2.0"
+  }
+}
