@@ -19,14 +19,21 @@
   "homepage": "https://github.com/michalrozekariane/fireblocks-poc#readme",
   "packageManager": "pnpm@9.10.0+sha1.216899f511c8dfde183c7cb50b69009c779534a8",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "@types/node": "^24.0.15",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.26.1",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@fireblocks/fireblocks-web3-provider": "^1.3.17",
+    "@fireblocks/hardhat-fireblocks": "^1.3.6",
     "@fireblocks/ts-sdk": "^11.0.0",
     "dotenv": "^17.2.0",
+    "fireblocks-sdk": "^5.38.0",
     "uuid": "^11.1.0"
   }
 }
