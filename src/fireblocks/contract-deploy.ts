@@ -1,12 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
-import { fireblocks } from './client';
+import { fireblocksSDK } from './client';
 import { ContractTemplatesApiDeployContractRequest } from '@fireblocks/ts-sdk';
 
 const contractTemplateId = '00000000-0000-0000-0000-000000000008';
 // const contractTemplateId = '6faaf76f-0702-4732-9195-fdde5c61ccb3';
 
 export const deployERC3643Contract = async () => {
-  const constructor = await fireblocks.contractTemplates.getConstructorByContractTemplateId({ contractTemplateId });
+  const constructor = await fireblocksSDK.contractTemplates.getConstructorByContractTemplateId({ contractTemplateId });
 
   // console.log('constructor:', constructor)
   // console.log(JSON.stringify(constructor.data.inputs, null, 2));
@@ -56,7 +56,7 @@ export const deployERC3643Contract = async () => {
   };
 
   try {
-    const result = await fireblocks.contractTemplates.deployContract(body);
+    const result = await fireblocksSDK.contractTemplates.deployContract(body);
     console.log('API called successfully. Returned data: ' + JSON.stringify(result, null, 2));
   } catch (err) {
     console.error(err)

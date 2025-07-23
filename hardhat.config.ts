@@ -1,7 +1,7 @@
 import '@nomicfoundation/hardhat-ethers';
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-ignition-ethers";
 import '@fireblocks/hardhat-fireblocks';
-
 import { ApiBaseUrl } from '@fireblocks/fireblocks-web3-provider';
 import { HardhatUserConfig } from 'hardhat/types';
 import { fireblocksApiKey, fireblocksKeyPath, hederaAssetID, hederaRPC, vaultAccountIds } from './src/constants';
@@ -16,6 +16,7 @@ const config: HardhatUserConfig = {
     hedera: {
       url: hederaRPC,
       chainId: 296,
+      // accounts: ['0x3f9851dfafd9e168015da972acfb2adc4413bd085600bf26faddcf50f2fbea23'],
       fireblocks: {
         apiBaseUrl: ApiBaseUrl.Sandbox,
         privateKey: fireblocksKeyPath,
