@@ -16,7 +16,6 @@ const config: HardhatUserConfig = {
     hedera: {
       url: hederaRPC,
       chainId: 296,
-      // accounts: ['0x3f9851dfafd9e168015da972acfb2adc4413bd085600bf26faddcf50f2fbea23'],
       fireblocks: {
         apiBaseUrl: ApiBaseUrl.Sandbox,
         privateKey: fireblocksKeyPath,
