@@ -2,6 +2,7 @@ node_modules
 .env
 fireblocks_secret.key
 fireblocks_secret2.key
+fireblocks_secret_editor.key
 node_modules
 .env
 

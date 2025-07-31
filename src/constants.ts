@@ -13,3 +13,6 @@ export const vaultAccountIds = [vaultAdminID, vaultIssuerID, vaultInvestorID];
 
 export const hederaRPC = process.env.HEDERA_RPC_URL as string;
 export const hederaAssetID = 'HBAR_TEST'
+
+export const trexFactoryAddress = process.env.TREX_FACTORY_ADDRESS as string
+export const trexTokenAddress = process.env.TREX_TOKEN_ADDRESS as string
